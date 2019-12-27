@@ -1,2 +1,5 @@
 ---
-# tasks file for ansible-kvm
+
+- include: hw_virt_check.yml
+
+- include: install_kvm.yml
