@@ -114,6 +114,7 @@ kvm_storage_pools:
 kvm_manage_vms: true
 
 kvm_images_format_type: qcow2
+kvm_images_cache_mode: none
 
 kvm_vms:
   - name: test_vm
