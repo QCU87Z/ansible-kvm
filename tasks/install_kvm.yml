@@ -10,7 +10,7 @@
 - name: Create libvirt group
   group:
     name: libvirt
-    state: presnet
+    state: present
   become: true
 
 - name: Ensure libvirtd is running and enabled
