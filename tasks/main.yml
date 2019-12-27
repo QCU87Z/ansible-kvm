@@ -3,3 +3,5 @@
 - include: hw_virt_check.yml
 
 - include: install_kvm.yml
+
+- include: configure_kvm.yml
