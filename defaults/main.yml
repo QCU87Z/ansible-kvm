@@ -53,10 +53,12 @@ kvm_users:
   []
 
 # Variable for networks
+kvm_config_virtual_networks: true
+
 kvm_virtual_networks:
-  - name: Green_Servers_VLAN101
+  - name: main_net
     mode: bridge
-    bridge_name: vmbr101
+    bridge_name: br0
     autostart: true
     state: active
   # - name: ovs-network
