@@ -8,7 +8,7 @@
 
 - include: users.yml
 
-- include: config_virtual_networks.yml
+- include: configure_virtual_networks.yml
   tags:
     - config_virtual_networks
   when:
