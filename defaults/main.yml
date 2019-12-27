@@ -47,3 +47,7 @@ kvm_admin_keepalive_interval: 5
 kvm_admin_keepalive_count: 5
 
 kvm_ovs_timeout: 5
+
+# Variables for something
+kvm_users:
+  []

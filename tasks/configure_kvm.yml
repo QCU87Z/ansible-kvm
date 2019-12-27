@@ -13,7 +13,7 @@
     - getent_group is defined
     - "'libvirt' in getent_group or 'libvirtd' in getent_group"
 
-- name: config_kvm | configuring kvm
+- name: configure_kvm | Drop libvirtd.conf
   template:
     src: libvirtd.conf.j2
     dest: /etc/libvirt/libvirtd.conf
