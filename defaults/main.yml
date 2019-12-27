@@ -113,6 +113,8 @@ kvm_storage_pools:
 # Variables for virtual machines
 kvm_manage_vms: true
 
+kvm_images_format_type: qcow2
+
 kvm_vms:
   - name: test_vm
     autostart: true
@@ -147,3 +149,4 @@ kvm_vms:
       #   type: bridge
     state: running
     vcpu: 1
+
