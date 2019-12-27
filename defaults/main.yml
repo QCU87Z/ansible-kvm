@@ -109,3 +109,41 @@ kvm_storage_pools:
     path: /var/lib/libvirt/lxc
     autostart: true
     state: active
+
+# Variables for virtual machines
+kvm_manage_vms: true
+
+kvm_vms:
+  - name: test_vm
+    autostart: true
+    # Define boot devices in order of preference
+    boot_devices:
+      - network
+      - hd
+      # - cdrom
+    cdrom:
+      source: /path/to/iso
+    graphics: false
+    # Define disks in MB
+    disks:
+        # ide, scsi, virtio, xen, usb, sata or sd
+      - disk_driver: virtio
+        name: test_vm.1
+        size: 36864
+      - disk_driver: virtio
+        name: test_vm.2
+        size: 51200
+    # Define a specific host where the VM should reside..Match inventory_hostname
+    # host: kvm01
+    # Define memory in MB
+    memory: 512
+    network_interfaces:
+      - source: default
+        network_driver: virtio
+        portgroup: main_net
+        type: network
+      # - source: vmbr102
+      #   network_driver: virtio
+      #   type: bridge
+    state: running
+    vcpu: 1

@@ -21,3 +21,11 @@
   when:
     - kvm_config_storage_pools
     - kvm_storage_pools is defined
+
+- include: configure_vms.yml
+  tags:
+    - config_vms
+  when:
+    - kvm_manage_vms is defined
+    - kvm_manage_vms
+    - kvm_vms is defined
