@@ -98,6 +98,8 @@ kvm_virtual_networks:
   #   vlan: 193
 
 # Variable for storage pools
+kvm_config_storage_pools: true
+
 kvm_storage_pools:
   - name: VM1
     path: /var/lib/libvirt/filesystems/
