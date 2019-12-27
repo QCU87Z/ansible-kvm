@@ -1,5 +1,5 @@
 ---
-- name: Installing KVM
+- name: install_kvm | Installing KVM
   yum:
     name: "{{ kvm_packages }}"
     state: present
@@ -7,13 +7,13 @@
   register: result
   until: result is successful
 
-- name: Create libvirt group
+- name: install_kvm | Create libvirt group
   group:
     name: libvirt
     state: present
   become: true
 
-- name: Ensure libvirtd is running and enabled
+- name: install_kvm | Ensure libvirtd is running and enabled
   service:
     name: libvirtd
     enabled: true
