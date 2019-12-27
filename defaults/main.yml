@@ -126,7 +126,7 @@ kvm_vms:
       - hd
       # - cdrom
     cdrom:
-      source: /path/to/iso
+      source: /tmp/centos.iso
     graphics: false
     # Define disks in MB
     disks:
