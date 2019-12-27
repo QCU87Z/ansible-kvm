@@ -1,5 +1,5 @@
 ---
-kvm_redhat_packages:
+kvm_packages:
   - bridge-utils
   - libvirt-client
   - libvirt-python
