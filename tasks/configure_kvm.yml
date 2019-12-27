@@ -15,7 +15,7 @@
 
 - name: config_kvm | configuring kvm
   template:
-    src: etc/libvirt/libvirtd.conf.j2
+    src: libvirtd.conf.j2
     dest: /etc/libvirt/libvirtd.conf
     owner: root
     group: root
