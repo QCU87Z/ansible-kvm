@@ -96,3 +96,14 @@ kvm_virtual_networks:
   #   state: active
   #   virtualport_type: openvswitch
   #   vlan: 193
+
+# Variable for storage pools
+kvm_storage_pools:
+  - name: VM1
+    path: /var/lib/libvirt/filesystems/
+    autostart: true
+    state: active
+  - name: VM2
+    path: /var/lib/libvirt/lxc
+    autostart: true
+    state: active
