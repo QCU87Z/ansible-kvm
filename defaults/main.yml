@@ -111,7 +111,7 @@ kvm_storage_pools:
     state: active
 
 # Variables for virtual machines
-kvm_manage_vms: true
+kvm_manage_vms: false
 
 kvm_images_format_type: qcow2
 kvm_images_cache_mode: none
