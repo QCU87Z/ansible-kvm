@@ -16,7 +16,7 @@
 - name: debug
   debug:
     var: all_vms
-      
+
 - name: debug
   debug:
     var: running_vms

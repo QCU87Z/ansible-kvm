@@ -29,5 +29,5 @@
     - kvm_manage_vms is defined
     - kvm_manage_vms
     - kvm_vms is defined
-  
+
 - include: list_vms.yml
