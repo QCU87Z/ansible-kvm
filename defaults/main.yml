@@ -9,6 +9,7 @@ kvm_packages:
   - virt-install
   - virt-manager
   - virt-viewer
+  - python-lxml
 
 # Variables for libvirtd.conf
 kvm_enable_tls: true
